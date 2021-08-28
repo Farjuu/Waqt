@@ -7,6 +7,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -19,6 +20,8 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
@@ -31,15 +34,23 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         grantPermission();
         initialize();
+        fetchCurrentDate();
 
         LocationIsEnabledOrNot();
 
         getcurrentlocation();
 
 
+    }
+
+    private void fetchCurrentDate() {
+
+        Date currentDate = new Date();
+        @SuppressLint("SimpleDateFormat") SimpleDateFormat dateFormat= new SimpleDateFormat("dd MMM,yyyy");
+        String dateOnly = dateFormat. format(currentDate);
+        currentdate. setText(dateOnly);
     }
 
     private void getcurrentlocation() {

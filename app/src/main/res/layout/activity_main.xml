@@ -16,16 +16,19 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:gravity="center">
+        android:layout_height="80dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
 
         <TextView
             android:id="@+id/loc_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#7E1515"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:paddingStart="5dp"
+            android:paddingEnd="15dp"/>
 
         <TextView
 
@@ -33,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#7E1515"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -57,7 +60,7 @@
 
             android:id="@+id/Fajr_time"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:textColor="#7E1515"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -84,7 +87,7 @@
 
             android:id="@+id/Dhuhr_time"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:textColor="#7E1515"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -112,7 +115,7 @@
 
             android:id="@+id/Asr_time"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:textColor="#7E1515"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -138,7 +141,7 @@
 
             android:id="@+id/Magrib_time"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:textColor="#7E1515"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -164,7 +167,7 @@
         <TextView
             android:id="@+id/Esha_time"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:textColor="#7E1515"
             android:textSize="20sp"
             android:textStyle="bold" />
