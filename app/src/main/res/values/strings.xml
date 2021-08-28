@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Waqt</string>
+    <string name="fajr">Fajar</string>
+    <string name="Dhuhr">Dhuhr</string>
+    <string name="Asr">Asar</string>
+    <string name="Magrib">Magrib</string>
+    <string name="Esha">Esha</string>
 </resources>

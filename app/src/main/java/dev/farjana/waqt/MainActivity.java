@@ -24,7 +24,7 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements LocationListener {
 
-    TextView loc_country,locationAddress;
+    TextView loc_country,currentdate;
     LocationManager locationManager;
 
     @Override
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
 
         try {
             locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-            locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,500,5,(LocationListener)this);
+            locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,500,5,this);
          }catch (SecurityException s){
             s.printStackTrace();
         }
@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
 
     private void initialize() {
         loc_country = findViewById(R.id.loc_txt);
-        locationAddress  =findViewById(R.id.loc_add);
+        currentdate =findViewById(R.id.date);
 
     }
 
